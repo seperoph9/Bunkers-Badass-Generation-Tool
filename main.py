@@ -18,6 +18,9 @@ from Generators.world_event_generator import generate_world_event
 from Generators.combat_scenario_generator import generate_combat_scenario
 from Generators.bounty_board_generator import generate_bounty_board
 from Generators.quest_generator import generate_random_quest
+from Generators.trap_generator import generate_random_trap
+from Generators.puzzle_generator import generate_random_puzzle
+from Generators.tavern_tale_generator import generate_tavern_tale
 
 # Define a dictionary to map user choices to generator functions
 generator_functions = {
@@ -39,11 +42,10 @@ generator_functions = {
 	# "16": generate_environmental_hazard,
 	"17": generate_bounty_board, # Generates a bounty board full of quests for the party to choose from
 	"18": generate_world_event,
-	# "19": generate_tavern_tale,
-	# "20": generate_trap,
-	# "21": generate_puzzle,
-	# "22": generate_random_encounter,
-	# "23": generate_arena_challenge,
+	"19": generate_tavern_tale,
+	"20": generate_random_trap,
+	"21": generate_random_puzzle,
+	# "22": generate_arena_challenge,
 }
 
 # Function to clear the screen
@@ -70,7 +72,7 @@ def main():
 13. Generate a custom quest		14. Generate a custom NPC		15. Generate a Custom Boss	
 16. Generate a Environmental Hazard 	17. Generate a Bounty Board 		18. Generate a Random World Event	
 19. Generate a Tavern Tale    		20. Generate a Random Trap		21. Generate a Random Puzzle  
-22. Generate a Random Encounter		23. Generate a Arena Challenge''')
+22. Generate a Arena Challenge''')
 
 		# Get user choice
 		choice = get_user_choice("Enter your choice: ", generator_functions.keys())
