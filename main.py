@@ -73,6 +73,7 @@ def main():
 19. Generate a Tavern Tale    		20. Generate a Random Trap		21. Generate a Random Puzzle
 ''')
 
+
 		# Get user choice
 		choice = get_user_choice("Enter your choice: ", generator_functions.keys())
 		clear_screen()
@@ -123,21 +124,3 @@ def main():
 
 # Entry point of the program
 main()
-
-
-
-
-#To do
-# A combat Scenario Creator
-# A Quest Generator
-# A NPC Generator
-# A Boss Generator
-# A Environmental  Hazard Chance Generator
-# A Bounty Board Generator
-# A World Event Generator
-# A Tavern Tale Generator (Possibly Tie to quest Generator)
-# A Trap Generator
-# A Random Encounter Generator
-# A Puzzle Generator
-# A Arena Challenge Generator
-# A Legendary Encounter Generator (Would be tied with the random encounter generator)
