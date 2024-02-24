@@ -21,6 +21,7 @@ from Generators.quest_generator import generate_random_quest
 from Generators.trap_generator import generate_random_trap
 from Generators.puzzle_generator import generate_random_puzzle
 from Generators.tavern_tale_generator import generate_tavern_tale
+from Generators.hazard_generator import generate_random_hazard
 
 # Define a dictionary to map user choices to generator functions
 generator_functions = {
@@ -39,7 +40,7 @@ generator_functions = {
 	"13": generate_random_quest, # Same as the bounty board but an individual quest
 	# "14": generate_custom_npc,
 	# "15": generate_custom_boss,
-	# "16": generate_environmental_hazard,
+	"16": generate_random_hazard,
 	"17": generate_bounty_board, # Generates a bounty board full of quests for the party to choose from
 	"18": generate_world_event,
 	"19": generate_tavern_tale,
