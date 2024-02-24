@@ -74,6 +74,3 @@ To get started, explore the various generators provided in the project. Experime
 ## Contributors
 - seperoph9 https://github.com/seperoph9
 - Annydote https://github.com/Annydote
-
-## License
-This project is licensed under the [MIT License](link to license file).
