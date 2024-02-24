@@ -22,6 +22,8 @@ from Generators.trap_generator import generate_random_trap
 from Generators.puzzle_generator import generate_random_puzzle
 from Generators.tavern_tale_generator import generate_tavern_tale
 from Generators.hazard_generator import generate_random_hazard
+from Generators.npc_generator import generate_random_npc
+from Generators.boss_generator import generate_random_boss
 
 # Define a dictionary to map user choices to generator functions
 generator_functions = {
@@ -38,8 +40,8 @@ generator_functions = {
 	"11": generate_moxx_tails,
 	"12": generate_combat_scenario, # Generates a combat scenario to use
 	"13": generate_random_quest, # Same as the bounty board but an individual quest
-	# "14": generate_custom_npc,
-	# "15": generate_custom_boss,
+	"14": generate_random_npc,
+	"15": generate_random_boss,
 	"16": generate_random_hazard,
 	"17": generate_bounty_board, # Generates a bounty board full of quests for the party to choose from
 	"18": generate_world_event,
