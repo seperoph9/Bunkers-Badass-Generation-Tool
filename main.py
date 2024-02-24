@@ -45,7 +45,6 @@ generator_functions = {
 	"19": generate_tavern_tale,
 	"20": generate_random_trap,
 	"21": generate_random_puzzle,
-	# "22": generate_arena_challenge,
 }
 
 # Function to clear the screen
@@ -71,8 +70,8 @@ def main():
 10. Generate Enemy Loot			11. Generate Mox Tails Drink		12. Generate a Combat Scenario	
 13. Generate a custom quest		14. Generate a custom NPC		15. Generate a Custom Boss	
 16. Generate a Environmental Hazard 	17. Generate a Bounty Board 		18. Generate a Random World Event	
-19. Generate a Tavern Tale    		20. Generate a Random Trap		21. Generate a Random Puzzle  
-22. Generate a Arena Challenge''')
+19. Generate a Tavern Tale    		20. Generate a Random Trap		21. Generate a Random Puzzle
+''')
 
 		# Get user choice
 		choice = get_user_choice("Enter your choice: ", generator_functions.keys())
