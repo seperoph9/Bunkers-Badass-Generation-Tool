@@ -1,10 +1,10 @@
 import random
-from grenade_generator import generate_grenade
-from relic_generator import generate_relic
-from potion_generator import generate_potion
-from gun_generator import generate_gun
-from shield_generator import generate_shield
-from save_generator import save_to_file
+from Generators.grenade_generator import generate_grenade
+from Generators.relic_generator import generate_relic
+from Generators.potion_generator import generate_potion
+from Generators.gun_generator import generate_gun
+from Generators.shield_generator import generate_shield
+from Generators.save_generator import save_to_file
 def generate_loot_chest():
 	chest_loot_table = {
 		1:{'contents':"MIMIC"},2:{'contents':"MIMIC"},3:{'contents':"MIMIC"},
