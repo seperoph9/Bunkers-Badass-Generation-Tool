@@ -2,22 +2,21 @@ import random
 import os
 
 # Import generator functions from separate files
-from grenade_generator import generate_grenade
-from relic_generator import generate_relic
-from potion_generator import generate_potion
-from gun_generator import generate_gun
-from shield_generator import generate_shield
-from cache_generator import generate_cache
-from trauma_generator import generate_trauma
-from enemy_loot_generator import generate_enemy_loot
-from loot_chest_generator import generate_loot_chest
-from dice_chest_generator import generate_dice_chest_loot
-from moxx_tails_generator import generate_moxx_tails
-
-from world_event_generator import generate_world_event
-from combat_scenario_generator import generate_combat_scenario
-from bounty_board_generator import generate_bounty_board
-from quest_generator import generate_random_quest
+from Generators.grenade_generator import generate_grenade
+from Generators.relic_generator import generate_relic
+from Generators.potion_generator import generate_potion
+from Generators.gun_generator import generate_gun
+from Generators.shield_generator import generate_shield
+from Generators.cache_generator import generate_cache
+from Generators.trauma_generator import generate_trauma
+from Generators.enemy_loot_generator import generate_enemy_loot
+from Generators.loot_chest_generator import generate_loot_chest
+from Generators.dice_chest_generator import generate_dice_chest_loot
+from Generators.moxx_tails_generator import generate_moxx_tails
+from Generators.world_event_generator import generate_world_event
+from Generators.combat_scenario_generator import generate_combat_scenario
+from Generators.bounty_board_generator import generate_bounty_board
+from Generators.quest_generator import generate_random_quest
 
 # Define a dictionary to map user choices to generator functions
 generator_functions = {
